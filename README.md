@@ -5,10 +5,10 @@ Personal project with only HTML - CSS
 This website is a replica of [Mixer](https://mixer.com/). The purpose of this website is just to practice what I have learned during the course. 
 
 ## Demo
-A live demo can be found [here](https://comanezz.github.io/tmixer/index.html).
+A live demo can be found [here](https://comanezz.github.io/mixer/).
 Here the screenshots of the website that I used on a Macbook:
-- one [Mixer screenshot1]((https://github.com/comanezz/mixer/blob/master/assets/wireframe/screenshot1.png)).
-- [Mixer screenshot1]((https://github.com/comanezz/mixer/blob/master/assets/wireframe/screenshot2.png)).
+- [screenshot1]((https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot1.png)).
+- [screenshot2]((https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot2.png)).
 
 ## Features
 - It is a one page website. 
