@@ -1,0 +1,272 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* background: #253141; */
+    background-image: linear-gradient(to bottom,
+        rgba(37,49, 65, .8) 0%,
+        #253141 60%,
+        #253141 100%
+        ),
+        url(https://specials-images.forbesimg.com/imageserve/5d5b519868cb0a0009178d38/960x0.jpg?fit=scale);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+header .left-menu .logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 19px 0 0;
+}
+header .left-menu, 
+header .right-menu {
+    display: flex;
+}
+header .left-menu .menu,
+header .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .left-menu .menu a,
+header .right-menu .language a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9fa4ae;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 8px 12px;
+    margin: 0 12px;
+}
+header .right-menu .signin a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: #0075d5;
+    border-radius: 3px;
+    padding: 8px 20px;
+}
+header .left-menu .menu a .fa,
+header .right-menu .language a .fa {
+    font-size: 1.6rem;
+}
+.container {
+    width: 99%;
+    margin: 0 auto;
+}
+.section-title {
+    font-size: 2rem;
+    color: white;
+    padding: 23px 0 40px;
+}
+#featured .section-videos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 580px 2fr 1fr;
+    gap: 10px;
+}
+#featured .section-videos .video {
+    cursor: pointer;
+}
+#featured .section-videos .video.center {
+    background: url(https://i.ytimg.com/vi/X2ebHILADxs/maxresdefault.jpg);
+    width: 100%;
+    height: 326px;
+    transform: scale(1.1);
+    box-sizing: border-box;
+    border: 2px solid #01bcf3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#featured .section-videos .video:nth-child(1) {
+    background: url(https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_EASportsFifa19_image1600w.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#featured .section-videos .video:nth-child(2) {
+    background: url(https://i.ytimg.com/vi/Xs80E2fcI9Q/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 25px;
+}
+#featured .section-videos .video:nth-child(4) {
+    background: url(https://twitchoverlay.com/stuff/uploads/2014/05/camo_preview2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+#featured .section-videos .video:nth-child(5) {
+    background: url(https://www.racedepartment.com/attachments/f1-2019-updated-1-09-jpg.321104/);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#featured .section-videos .video:nth-child(1) .arrow,
+#featured .section-videos .video:nth-child(5) .arrow {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+#featured .section-videos .video:nth-child(5) .arrow {
+    right: 0px;
+}
+#featured .section-videos .video .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+#featured .section-videos .video .arrow .fa {
+    color: #01bcf3;
+    font-size: 4rem;
+}
+#featured .section-videos .video:nth-child(1) .arrow .fa {
+    position: absolute;
+    left: 10px;
+}
+#featured .section-videos .video:nth-child(5) .arrow .fa {
+    position: absolute;
+    right: 10px;
+}
+#featured .dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#featured .dot .circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#featured .dot .circles .circle {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#featured .dot .circles .circle .background-color {
+    background: #424b59;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+#featured .dot .circles .circle:hover .background-color{
+    background: #01bcf3;
+    width: 16px;
+    height: 16px;
+}
+#featured .dot .circles .circle.active .background-color {
+    background: #01bcf3;
+    width: 16px;
+    height: 16px;
+}
+
+#top-games {
+    padding-bottom: 20px;
+}
+#top-games .subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-games .subtitle .see-all a{
+    text-decoration: none;
+    color: #01bcf3;
+    padding: 7px 12px;
+    border-radius: 2px;
+}
+#top-games .subtitle .see-all a:hover{
+    background: #323d4b;
+}
+#top-games .games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+#top-games .games .game{
+    width: 309px;
+    height: 367px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.45);
+}
+#top-games .games .game:nth-child(1) {
+    background: url(https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-285x380.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top-games .games .game:nth-child(2) {
+    background: url(https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Apex_legends_cover.jpg/220px-Apex_legends_cover.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top-games .games .game:nth-child(3) {
+    background: url(https://haste.net/wp-content/uploads/2017/11/Haste-LoL-Cover.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top-games .games .game:nth-child(4) {
+    background: url(https://www.thesun.co.uk/wp-content/uploads/2018/08/NINTCHDBPICT000426658494.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top-games .games .game .info{
+    background: #29374a;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    /* border-radius: 6px; */
+}
+#top-games .games .game:hover .info{
+    background: #43526d;
+}
+#top-games .games .game .info .title {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#top-games .games .game .info .views {
+    color: #78818d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+#top-games .games .game .info .views .fa {
+    margin-right: 3px;
+}
