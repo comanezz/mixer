@@ -7,8 +7,8 @@ This website is a replica of [Mixer](https://mixer.com/). The purpose of this we
 ## Demo
 A live demo can be found [here](https://comanezz.github.io/mixer/).
 Here the screenshots of the website that I used on a Macbook:
-- [screenshot1]((https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot1.png)).
-- [screenshot2]((https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot2.png)).
+- [screenshot1](https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot1.png).
+- [screenshot2](https://github.com/comanezz/mixer/blob/master/assets/screenshots/screenshot2.png).
 
 ## Features
 - It is a one page website. 
