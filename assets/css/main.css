@@ -68,14 +68,7 @@ header .right-menu .signin a {
     padding: 8px 20px;
 }
 header .right-menu .signin a:hover {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 700;
     background-color: #008bfe;
-    border-radius: 3px;
-    padding: 8px 20px;
 }
 
 header .left-menu .menu a .fa,
